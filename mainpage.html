@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Let's(n't) Go Gambling!</title>
+    <link rel="stylesheet" href="main_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main_handling.js"></script>
+</head>
+<body>
+    <div class="inputSelect">
+    <p>Do you want to gamble, or do you want to win?</p>
+    <p>I assume you want to win. Well, in any case, pick your poison.</p>
+    <select name="lottoTypes" id="lottoTypes">
+        <option value="Powerball">Powerball</option>
+        <option value="Mega Millions">Mega Millions</option>
+    </select>
+    <p>How much does a ticket cost these days? It used to be a dollar but I'm not sure.</p>
+    <input type="number" id="inputCost" value="1" min="1">
+    <input type="button" id="inputSubmit" value="Run the numbers">
+    <input type="button" id="test" value="test">
+    </div>
+    <div class="output" style="display:none">
+    <p>Most important thing first: play <tag class="outputName">Game</tag> <b>if and <i>only</i> if</b> the jackpot is higher than <tag id="outputWorthwhile">Worthwhile</tag>.</p>
+    <p>Well then, what does that leave us?</p>
+    <p><tag class="outputName">Game</tag> has <tag id="outputPossible">Possible</tag> combinations you can pick.</p>
+    <p>So, multiply that by <tag id="outputCost">Cost</tag>...</p>
+    <p>To <i>guarantee</i> winning through buying every possible ticket, you'd need to spend <tag id="outputTotal">Total</tag>.</p>
+    <p>Which, you know, not great. But if you wanted a 50-50 shot, you'd only need <tag id="outputHalf">Half</tag>.</p>
+    <p>Here, I'll just cut to the chase. The "expected value" of something is "value times how likely it is to happen."</p>
+    <p>Buying one <tag id="outputName">Game</tag> has an "expected value" of <tag id="outputExpected">ExpectedValue</tag> which is basically zero.</p>
+    </div>
+</body>
+</html>
